@@ -16,7 +16,7 @@ export function convertAVIToMP4(aviBuffer, fileType) {
       .toFormat("mp4")
       .videoCodec("libx264")
       .audioCodec("aac")
-      .videoBitrate(1100)
+      .videoBitrate(800)
       .audioBitrate(128)
       .on("end", () => {
         console.log("Conversion finished");
