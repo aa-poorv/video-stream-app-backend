@@ -65,6 +65,7 @@ export const postVideo = async (req, res, next) => {
 
 export const getAllVideos = async (req, res, next) => {
   try {
+    console.log("hit");
     const limit = parseInt(req.query.limit) || 9;
     const page = parseInt(req.query.page) || 1;
 
